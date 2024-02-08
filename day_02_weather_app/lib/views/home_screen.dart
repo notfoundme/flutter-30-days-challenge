@@ -1,8 +1,9 @@
 import 'package:day_02_weather_app/constants/colors.dart';
 import 'package:day_02_weather_app/constants/images.dart';
 import 'package:day_02_weather_app/extensions/responsive_context.dart';
+import 'package:day_02_weather_app/views/weather_detail_screen.dart';
 import 'package:day_02_weather_app/widgits/custom_appbar.dart';
-import 'package:day_02_weather_app/widgits/hourly_info_card.dart';
+import 'package:day_02_weather_app/widgits/info_card.dart';
 import 'package:day_02_weather_app/widgits/main_info.dart';
 import 'package:day_02_weather_app/widgits/more_info.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: bgColor,
-      // ignore: unnecessary_const
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
         
             Container(
               color: Colors.transparent,
-              height: context.height * 0.4,
+              height: context.height * 0.35,
               width: context.width * 0.8,
               child: Image.network(
                 nightStatRain,
@@ -38,7 +38,11 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
         
-            const main_info(),
+            GestureDetector(
+              onTap: (){
+                context.navigateTo(WeatherDetailScreen(),);
+              },
+              child: main_info(),),
             moreInfo(),
             Container(
               height: context.height*0.2,
@@ -47,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount:8 ,
                 itemBuilder: (context,index) {
-                  return HourlyInfoCard(index: index,);
+                  return InfoCard.InfoCard(index: index, title: '22.00', value: '16', image: sunny,);
                 }
               ),
             ),

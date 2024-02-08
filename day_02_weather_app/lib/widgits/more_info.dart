@@ -4,6 +4,8 @@ import 'package:day_02_weather_app/extensions/responsive_context.dart';
 import 'package:flutter/material.dart';
 
 class moreInfo extends StatelessWidget {
+
+
   moreInfo({
     super.key,
   });
