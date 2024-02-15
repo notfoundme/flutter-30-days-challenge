@@ -1,9 +1,8 @@
-import 'dart:html';
 
-import 'package:day_02_weather_app/api/weather_api_impl.dart';
+import 'package:day_02_weather_app/api/weatherApi/weather_api_impl.dart';
 import 'package:day_02_weather_app/model/weather_model.dart';
-import 'package:day_02_weather_app/repo/weather_repo.dart';
-import 'package:day_02_weather_app/repo/weather_repo_impl.dart';
+import 'package:day_02_weather_app/repo/weather_repo/weather_repo.dart';
+import 'package:day_02_weather_app/repo/weather_repo/weather_repo_impl.dart';
 import 'package:flutter/material.dart';
 
 /// [HomeViewModel]
@@ -42,3 +41,4 @@ class HomeViewModel with ChangeNotifier {
     notifyListeners();
   }
 }
+

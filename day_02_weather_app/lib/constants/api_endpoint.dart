@@ -6,6 +6,7 @@ class ApiEndPoint{
 
  String getApiUrl(String location){
 
-  return ApiEndPoint.baseUrl + location + ApiEndPoint.trailingUrl;
+  // return ApiEndPoint.baseUrl + location + ApiEndPoint.trailingUrl;
+  return "https://raw.githubusercontent.com/imp-sike/mockfake/main/weather.json";
  }
 }

@@ -1,11 +1,9 @@
 import 'package:day_02_weather_app/constants/colors.dart';
 import 'package:day_02_weather_app/constants/images.dart';
 import 'package:day_02_weather_app/extensions/responsive_context.dart';
-import 'package:day_02_weather_app/widgets/custom_appbar.dart';
 import 'package:day_02_weather_app/widgets/detail_screen_appbar.dart';
 import 'package:day_02_weather_app/widgets/detail_screen_more_info_card.dart';
 import 'package:day_02_weather_app/widgets/info_card.dart';
-import 'package:day_02_weather_app/widgets/more_info.dart';
 import 'package:flutter/material.dart';
 
 class WeatherDetailScreen extends StatelessWidget {
@@ -19,15 +17,15 @@ class WeatherDetailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            DetailScreenAppBar(),
-            SizedBox(
+            const DetailScreenAppBar(),
+            const SizedBox(
               height: 20,
             ),
             dayMonthCard(context),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             SizedBox(
@@ -45,23 +43,23 @@ class WeatherDetailScreen extends StatelessWidget {
                     );
                   }),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             detailScreenMoreInfo(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             detailScreenMoreInfo(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             detailScreenMoreInfo(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             detailScreenMoreInfo(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             detailScreenMoreInfo(),

@@ -1,5 +1,5 @@
-import 'package:day_02_weather_app/api/weather_api.dart';
-import 'package:day_02_weather_app/api/weather_api_impl.dart';
+import 'package:day_02_weather_app/api/weatherApi/weather_api.dart';
+import 'package:day_02_weather_app/api/weatherApi/weather_api_impl.dart';
 import 'package:day_02_weather_app/views/home/home_screen.dart';
 import 'package:day_02_weather_app/views/home/home_view_model.dart';
 import 'package:flutter/material.dart';
