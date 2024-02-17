@@ -1,8 +1,9 @@
+
 import 'dart:convert';
 
-import 'package:day_02_weather_app/api/weatherApi/weather_api.dart';
-import 'package:day_02_weather_app/constants/api_endpoint.dart';
-import 'package:day_02_weather_app/model/weather_model.dart';
+import 'package:flutter_application_1/api/weatherApi/weather_api.dart';
+import 'package:flutter_application_1/constants/api_endpoint.dart';
+import 'package:flutter_application_1/models/weather_model.dart';
 import 'package:http/http.dart' as http;
 
 class WeatherApiImpl implements WeatherApi {

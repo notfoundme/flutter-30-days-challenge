@@ -1,7 +1,8 @@
-import 'package:day_02_weather_app/constants/colors.dart';
-import 'package:day_02_weather_app/extensions/responsive_context.dart';
-import 'package:day_02_weather_app/views/home/home_view_model.dart';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/constants/colors.dart';
+import 'package:flutter_application_1/constants/responsive_context.dart';
+import 'package:flutter_application_1/screens/view_models/home_view_model.dart';
 import 'package:provider/provider.dart';
 
 class main_info extends StatelessWidget {

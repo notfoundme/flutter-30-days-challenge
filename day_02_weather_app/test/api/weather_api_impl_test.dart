@@ -1,6 +1,7 @@
-import 'package:day_02_weather_app/api/weather_api.dart';
-import 'package:day_02_weather_app/api/weather_api_impl.dart';
-import 'package:day_02_weather_app/model/weather_model.dart';
+
+import 'package:flutter_application_1/api/weatherApi/weather_api.dart';
+import 'package:flutter_application_1/api/weatherApi/weather_api_impl.dart';
+import 'package:flutter_application_1/models/weather_model.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

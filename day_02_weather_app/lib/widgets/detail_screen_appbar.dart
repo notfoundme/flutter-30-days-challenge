@@ -1,6 +1,6 @@
 
-import 'package:day_02_weather_app/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/constants/colors.dart';
 
 class DetailScreenAppBar extends StatelessWidget {
   const DetailScreenAppBar({

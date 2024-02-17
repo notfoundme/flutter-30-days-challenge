@@ -1,4 +1,4 @@
-import 'package:day_02_weather_app/constants/api_endpoint.dart';
+import 'package:flutter_application_1/constants/api_endpoint.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -10,7 +10,7 @@ void main() {
 
       expect(
         result,
-        "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Biratnagar?unitGroup=metric&key=7JWQMV9WC5JJBUQF22L83ERCB&contentType=json",
+        "https://raw.githubusercontent.com/imp-sike/mockfake/main/weather.json",
       );
     },
   );

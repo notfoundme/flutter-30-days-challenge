@@ -1,12 +1,12 @@
-class ApiEndPoint{
+class ApiEndPoint {
+  static String baseUrl =
+      'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/';
 
-  static String baseUrl='https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/';
+  static String trailingUrl =
+      '?unitGroup=metric&key=7JWQMV9WC5JJBUQF22L83ERCB&contentType=json';
 
-  static String trailingUrl = '?unitGroup=metric&key=7JWQMV9WC5JJBUQF22L83ERCB&contentType=json';
-
- String getApiUrl(String location){
-
-  // return ApiEndPoint.baseUrl + location + ApiEndPoint.trailingUrl;
-  return "https://raw.githubusercontent.com/imp-sike/mockfake/main/weather.json";
- }
+  String getApiUrl(String location) {
+    // return ApiEndPoint.baseUrl + location + ApiEndPoint.trailingUrl;
+    return "https://raw.githubusercontent.com/imp-sike/mockfake/main/weather.json";
+  }
 }

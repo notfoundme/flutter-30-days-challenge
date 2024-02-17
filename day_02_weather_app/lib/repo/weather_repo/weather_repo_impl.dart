@@ -1,6 +1,6 @@
-import 'package:day_02_weather_app/api/weatherApi/weather_api.dart';
-import 'package:day_02_weather_app/model/weather_model.dart';
-import 'package:day_02_weather_app/repo/weather_repo/weather_repo.dart';
+import 'package:flutter_application_1/api/weatherApi/weather_api.dart';
+import 'package:flutter_application_1/models/weather_model.dart';
+import 'package:flutter_application_1/repo/weather_repo/weather_repo.dart';
 
 class WeatherRepoImpl implements WeatherRepo{
   final WeatherApi weatherApi ;
